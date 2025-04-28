@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #17eabc;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(8, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #03def7;
+}
+.active {
+    background-color: #04AA6D;
+}
+        body {background-color: rgb(176, 197, 230);}
+        h1   {color: blue;}
+        p    {color: red;}
+        h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+    }
+    p  {
+    color: rgba(11, 11, 11, 0.929);
+    font-family: courier;
+    font-size: 160%;
+    text-align: left;
+    }
+        </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Introduction to JavaScript Document</title>
+	<!— This is an external script —>
+		<script src="tiinyscript.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Google Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<Body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <h1 style="color:blue;">WELCOME TO MY JS WEB PAGE</h1>
+    <p style="color:red;">This is my first JS web page. click the tab below to read more about JC coding.</p>
+<!— These are inline scripts —>
+	<script>
+		var phrase = ' My first JavaScript!';
+		alert('Hello! Welcome to my script,' + phrase );
+	</script>
+	<script>
+// Create a button element
+		const button = document.createElement('button');
+// Set the button text
+		button.textContent = 'Click here to continue!';
+// Add the button to the body of the HTML document
+		document.body.appendChild(button);
+	</script>
+	<script>
+		const buttonscript = document.querySelector('button');
+		buttonscript.addEventListener('click', function() {
+		alert('JavaScript is fun!');
+		});
+	</script>
+    <h2>Do you want to print this page?</h2>
+    <p>Click the button below to enter print mode for the current page.</p>
+    <button onclick="window.print()">Print</button>
+    <h2>JavaScript ISO Dates</h2>
+<p id="demo"></p>
+<script>
+    const d = new Date("2025-04-25");
+    document.getElementById("demo").innerHTML = d;
+</script>
+<h1>Google icon library</h1>
+    <p>Some Google icons:</p>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+<br><br>
+</body>
+</html>
